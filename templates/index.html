@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Display</title>
+</head>
+<style>
+    /* Style for the card container */
+    .card {
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        color: white;
+    }
+    body{
+        background-color: black;
+    }
+
+    /* Style for the link text */
+    .link-text {
+        color: #333;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        {% for link in links %}
+        <div class="card">
+            <a href="{{ link.url }}" class="link-text"> {{ link.text }}</a>
+        </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
