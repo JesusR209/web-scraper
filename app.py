@@ -32,8 +32,6 @@ if __name__ == '__main__':
     
 
     
-    # use jinja and flask to create new cards.
-    # once that is done push the repo to github :)
-    # this is your first actual scraper pat yourself on the back!
+ 
     
     
